@@ -23,6 +23,8 @@
 
     socket.on('SOUND', function(data){
       console.log('SOUND request');
+      var audio = new Audio('/public/assets/sounds/loud-clapping.mp3');
+      audio.play();
     });
 
     let btnLight = document.getElementById('btn-light');

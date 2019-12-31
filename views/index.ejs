@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Territory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 <body id="main-body">
+
   <h1>Welcome</h1>
   <button id="btn-light">Light</button>
   <button id="btn-sound">Sound</button>
@@ -23,7 +25,7 @@
 
     socket.on('SOUND', function(data){
       console.log('SOUND request');
-      var audio = new Audio('/public/assets/sounds/loud-clapping.mp3');
+      var audio = new Audio(`/public/assets/sounds/${data.audio}.mp3`);
       audio.play();
     });
 
@@ -31,11 +33,17 @@
     let btnSound = document.getElementById('btn-sound');
     
     btnLight.onclick = () => {
-      socket.emit('LIGHT', { 'test': 'test' });
+      let currentColor = document.body.style.background.split(' ')[0];
+      if(currentColor == "black"){
+        socket.emit('LIGHT', { 'color': 'white' });
+      }
+      else {
+        socket.emit('LIGHT', { 'color': 'black' });
+      }
     }
 
     btnSound.onclick = () => {
-      socket.emit('SOUND', { 'test': 'test' });
+      socket.emit('SOUND', { 'audio': 'loud-clapping' });
     }
   </script>
 </body>

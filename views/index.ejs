@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Territory</title>
+</head>
+<body id="main-body">
+  <h1>Welcome</h1>
+  <button id="btn-light">Light</button>
+  <button id="btn-sound">Sound</button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script>
+    const socket = io.connect('');
+    socket.on('connect', function(){
+      console.log('connected');
+    });
+
+    socket.on('LIGHT', function(data){
+      console.log('LIGHT request');
+      document.body.style.background = data.color;
+    });
+
+    socket.on('SOUND', function(data){
+      console.log('SOUND request');
+    });
+
+    let btnLight = document.getElementById('btn-light');
+    let btnSound = document.getElementById('btn-sound');
+    
+    btnLight.onclick = () => {
+      socket.emit('LIGHT', { 'test': 'test' });
+    }
+
+    btnSound.onclick = () => {
+      socket.emit('SOUND', { 'test': 'test' });
+    }
+  </script>
+</body>
+</html>

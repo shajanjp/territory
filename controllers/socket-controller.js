@@ -2,11 +2,11 @@ function clientConnected(client, io){
   console.log('client connected');
 
   client.on('SOUND', (data) => {
-    io.emit('SOUND',  {audio: "clap"});
+    io.emit('SOUND',  { audio: data.audio });
   })
 
   client.on('LIGHT', (data) => {
-    io.emit('LIGHT', {color: 'green'});
+    io.emit('LIGHT', { color: data.color });
   })
 
   client.on('disconnect', () => {

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Territory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body id="main-body">
+  <h1>Admin</h1>
+  <button id="btn-light">Light</button>
+  <button id="btn-sound">Sound</button>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script>
+    const socket = io.connect('');
+    socket.on('connect', function(){
+      console.log('connected');
+    });
+
+    // socket.on('LIGHT', function(data){
+    //   console.log('LIGHT request');
+    //   document.body.style.background = data.color;
+    // });
+
+    // socket.on('SOUND', function(data){
+    //   console.log('SOUND request');
+    //   var audio = new Audio(`/public/assets/sounds/${data.audio}.mp3`);
+    //   audio.play();
+    // });
+
+    // let btnLight = document.getElementById('btn-light');
+    // let btnSound = document.getElementById('btn-sound');
+    
+    // btnLight.onclick = () => {
+    //   let currentColor = document.body.style.background.split(' ')[0];
+    //   if(currentColor == "black"){
+    //     socket.emit('LIGHT', { 'color': 'white' });
+    //   }
+    //   else {
+    //     socket.emit('LIGHT', { 'color': 'black' });
+    //   }
+    // }
+
+    // btnSound.onclick = () => {
+    //   socket.emit('SOUND', { 'audio': 'loud-clapping' });
+    // }
+  </script>
+</body>
+</html>

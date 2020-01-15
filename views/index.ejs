@@ -4,47 +4,174 @@
   <meta charset="UTF-8">
   <title>Territory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+    body, html{
+      margin: 0px !important;
+      padding: 0px !important;
+      height: 100%;
+    }
+    #matrix-container{
+      width: 100%;
+      text-align: center;
+    }
+  </style>
 </head>
 <body id="main-body">
 
-  <h1>Welcome</h1>
+  <!-- <p>Welcome, User Count: <span id="user-count"></span></p> -->
+  <div id="matrix-container">
+    <svg id="matrix-display" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  xml:space="preserve" viewBox="0 0 305 145">
+      <g transform="translate(5, 5)">
+        <g transform="translate(0, 0)">
+          <rect class="pixel" id="p1" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p2" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p3" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p4" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p5" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p6" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p7" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(20, 0)">
+          <rect class="pixel" id="p8" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p9" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p10" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p11" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p12" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p13" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p14" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(40, 0)">
+          <rect class="pixel" id="p15" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p16" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p17" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p18" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p19" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p20" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p21" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(60, 0)">
+          <rect class="pixel" id="p22" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p23" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p24" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p25" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p26" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p27" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p28" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(80, 0)">
+          <rect class="pixel" id="p29" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p30" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p31" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p32" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p33" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p34" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p35" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+
+
+        <g transform="translate(100, 0)">
+          <rect class="pixel" id="p36" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p37" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p38" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p39" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p40" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p41" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p42" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(120, 0)">
+          <rect class="pixel" id="p43" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p44" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p45" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p46" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p47" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p48" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p49" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(140, 0)">
+          <rect class="pixel" id="p50" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p51" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p52" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p53" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p54" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p55" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p56" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(160, 0)">
+          <rect class="pixel" id="p57" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p58" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p59" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p60" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p61" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p62" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p63" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(180, 0)">
+          <rect class="pixel" id="p64" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p65" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p66" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p67" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p68" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p69" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p70" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+
+
+        <g transform="translate(200, 0)">
+          <rect class="pixel" id="p71" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p72" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p73" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p74" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p75" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p76" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p77" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(220, 0)">
+          <rect class="pixel" id="p78" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p79" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p80" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p81" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p82" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p83" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p84" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(240, 0)">
+          <rect class="pixel" id="p85" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p86" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p87" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p88" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p89" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p90" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p91" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(260, 0)">
+          <rect class="pixel" id="p92" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p93" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p94" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p95" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p96" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p97" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p98" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+        <g transform="translate(280, 0)">
+          <rect class="pixel" id="p99" width="15" height="15" x="0" y="0" fill="#efefef"></rect>
+          <rect class="pixel" id="p100" width="15" height="15" x="0" y="20" fill="#efefef"></rect>
+          <rect class="pixel" id="p101" width="15" height="15" x="0" y="40" fill="#efefef"></rect>
+          <rect class="pixel" id="p102" width="15" height="15" x="0" y="60" fill="#efefef"></rect>
+          <rect class="pixel" id="p103" width="15" height="15" x="0" y="80" fill="#efefef"></rect>
+          <rect class="pixel" id="p104" width="15" height="15" x="0" y="100" fill="#efefef"></rect>
+          <rect class="pixel" id="p105" width="15" height="15" x="0" y="120" fill="#efefef"></rect>
+        </g>
+      </g>
+    </svg>
+  </div>
   <button id="btn-light">Light</button>
   <button id="btn-sound">Sound</button>
+  User Count: <span id="user-count"></span>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
-  <script>
-    const socket = io.connect('');
-    socket.on('connect', function(){
-      console.log('connected');
-    });
-
-    socket.on('LIGHT', function(data){
-      console.log('LIGHT request');
-      document.body.style.background = data.color;
-    });
-
-    socket.on('SOUND', function(data){
-      console.log('SOUND request');
-      var audio = new Audio(`/public/assets/sounds/${data.audio}.mp3`);
-      audio.play();
-    });
-
-    let btnLight = document.getElementById('btn-light');
-    let btnSound = document.getElementById('btn-sound');
-    
-    btnLight.onclick = () => {
-      let currentColor = document.body.style.background.split(' ')[0];
-      if(currentColor == "black"){
-        socket.emit('LIGHT', { 'color': 'white' });
-      }
-      else {
-        socket.emit('LIGHT', { 'color': 'black' });
-      }
-    }
-
-    btnSound.onclick = () => {
-      socket.emit('SOUND', { 'audio': 'loud-clapping' });
-    }
-  </script>
+  <script src="/public/assets/scripts/pixels-charmap.js"></script>
+  <script src="/public/assets/scripts/pixels-lib.js"></script>
+  <script src="/public/assets/scripts/main.js"></script>
 </body>
 </html>

@@ -47,6 +47,13 @@ socket.on('TERMINAL_ID', function(data){
 
 let btnLight = document.getElementById('btn-light');
 let btnSound = document.getElementById('btn-sound');
+let btnFullScreen = document.getElementById('btn-fullscreen');
+
+
+btnFullScreen.addEventListener('click', () => {
+  document.body.requestFullscreen();
+  // document.exitFullscreen();
+})
 
 btnLight.onclick = () => {
   let currentColor = document.body.style.background.split(' ')[0];

@@ -1,6 +1,10 @@
 const userStore = {};
 const dataStore = require('../data/quotes.js');
 
+function generateRandomNumber(min, max){
+  return Math.floor(Math.random() * (max-min) + min);
+}
+
 function newUserUpdateEmit(io, roomId){
   io.emit(`NEW_USER ${roomId}`, { count: userStore[roomId].users.length });
   userStore[roomId].users.forEach(user => {
@@ -43,7 +47,8 @@ function clientConnected(roomId = 'GENERAL', client, io){
   });
 
   client.on('LIGHT', (data) => {
-    io.emit('LIGHT', { color: data.color, textContent: dataStore.quotes[5] });
+    let quoteRandomNumber = generateRandomNumber(0,dataStore.quotes.length - 1);
+    io.emit('LIGHT', { color: data.color, textContent: dataStore.quotes[quoteRandomNumber] });
   });
 
   client.on('disconnect', () => {

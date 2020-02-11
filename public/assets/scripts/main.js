@@ -3,7 +3,7 @@ console.log('matrixDisplay', matrixDisplay);
 let pixels = document.getElementsByClassName('pixel');
 let svg = document.getElementById('matrix-display');
 let terminalId = 0;
-
+let sidebarToggled = false;
 for(let p of pixels){
   p.attributes.fill.value = '#666';
 }
@@ -67,4 +67,10 @@ btnLight.onclick = () => {
 
 btnSound.onclick = () => {
   socket.emit('SOUND', { 'audio': 'loud-clapping' });
+}
+
+let sidebarToggleButton = document.getElementById('sidebar-toggle');
+
+sidebarToggleButton.onclick = () => {
+
 }
